@@ -1,0 +1,46 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+}
+
+.header, .top-img, .left, .right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #222;
+}
+
+.header {
+  height: 15%;
+  background: #6cb5f7;
+}
+
+.top-img {
+  height: 15%;
+  background: #f5aeea;
+}
+
+.content {
+  display: flex;
+  flex: 1; /* займає решту простору (70%) */
+}
+
+.left {
+  flex: 70%;
+  background: #b8f7a4;
+}
+
+.right {
+  flex: 30%;
+  background: #7fb37b;
+}
