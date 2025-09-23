@@ -1,3 +1,4 @@
+
 html, body {
   height: 100%;
   margin: 0;
@@ -5,13 +6,16 @@ html, body {
 }
 
 .container {
-  display: flex;
-  flex-direction: column;
   width: 100%;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
-.header, .top-img, .left, .right {
+.header {
+  width: 100%;
+  height: 15%;
+  background: #6cb5f7;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,27 +24,91 @@ html, body {
   color: #222;
 }
 
-.header {
-  height: 15%;
-  background: #6cb5f7;
+.header h2 {
+  margin: 0;
 }
 
 .top-img {
+  width: 100%;
   height: 15%;
   background: #f5aeea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #222;
 }
 
+.top-img img,
+.left img,
+.right img {
+  max-width: 10%;
+  height: auto;
+  display: block;
+}
+
+
 .content {
+  width: 100%;
+  height: 70%;
   display: flex;
-  flex: 1; /* займає решту простору (70%) */
 }
 
 .left {
-  flex: 70%;
+  width: 70%;
+  height: 100%;
   background: #b8f7a4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #222;
 }
 
 .right {
-  flex: 30%;
+  width: 30%;
+  height: 100%;
   background: #7fb37b;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  font-size: 24px;
+  font-weight: bold;
+  color: #222;
+  text-align: center;
+}
+
+.links {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 15px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.links li {
+  margin: 0;
+}
+
+.links .btn {
+  display: inline-block;
+  padding: 8px 12px;
+  border: 2px solid #333;
+  border-radius: 6px;
+  text-align: center;
+  text-decoration: underline;
+  color: #000;
+  font-weight: bold;
+  background: gray;
+  transition: background 0.3s, color 0.3s;
+}
+
+.links .btn:hover {
+  background: #333;
+  color: #fff;
 }
