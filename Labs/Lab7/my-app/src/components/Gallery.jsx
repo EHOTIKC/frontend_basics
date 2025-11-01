@@ -11,14 +11,32 @@ function Gallery() {
     {
       id: 2,
       name: "Toyota Supra MK4",
-      description: "Ікона японського автопрому - Supra.",
+      description: "Ікона японського автопрому — Supra, популярна у фільмі 'Форсаж'.",
       image: "/images/supra.png",
     },
     {
       id: 3,
       name: "Ford Mustang GT",
-      description: "Класичний американський мускул-кар з потужним V8.",
+      description: "Класичний американський мускул-кар із потужним двигуном V8.",
       image: "/images/mustang.png",
+    },
+    {
+      id: 4,
+      name: "Nissan Skyline GT-R R34",
+      description: "Культовий спорткар, улюблений шанувальниками JDM-культури.",
+      image: "/images/r34.png",
+    },
+    {
+      id: 5,
+      name: "Mercedes-Benz C63 AMG",
+      description: "Потужний німецький седан із атмосферним V8 та брутальним звуком.",
+      image: "/images/c63.png",
+    },
+    {
+      id: 6,
+      name: "Audi RS6 Avant",
+      description: "Сімейний універсал із продуктивністю справжнього спорткара.",
+      image: "/images/rs6.png",
     },
   ];
 
