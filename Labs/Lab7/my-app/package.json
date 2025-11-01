@@ -1,6 +1,5 @@
 {
   "name": "my-app",
-  "homepage": "https://ehotikc.github.io/frontend_basics/Labs/Lab7",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -16,6 +15,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "deploy-local": "npm run build && rm -rf ../my-app/* && cp -r build/* ../my-app/",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "test": "react-scripts test",
